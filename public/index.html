@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MonteQuad Kolašin - Doživite avanturu uz organizovane quad i buggy ture kroz prelijepe crnogorske planine">
+  <title>MonteQuad Kolašin | Quad & Buggy Ture</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ANIMATED BACKGROUND -->
+  <div class="bg-gradient"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- LANGUAGE SWITCHER -->
+  <nav class="lang-nav glass-card">
+    <a href="index.html" class="active">ME</a>
+    <span class="divider"></span>
+    <a href="en.html">EN</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge glass-card reveal">
+        <i class="fa-solid fa-mountain-sun"></i>
+        <span>Kolašin, Crna Gora</span>
+      </div>
+      
+      <h1 class="hero-title reveal">
+        <span class="title-line">Monte</span>
+        <span class="title-line accent">Quad</span>
+      </h1>
+      
+      <p class="hero-subtitle reveal">
+        Doživite avanturu uz organizovane<br>
+        <span class="highlight">quad i buggy ture</span>
+      </p>
+
+      <div class="hero-buttons reveal">
+        <a href="#booking" class="btn btn-primary glow-effect">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Rezerviši turu</span>
+        </a>
+
+        <a href="https://www.instagram.com/montequadtourkolasin/" target="_blank" rel="noopener" class="btn btn-instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Skroluj dolje</span>
+      </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card glass-card reveal">
+          <div class="feature-icon">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <h3>Jedinstvene Rute</h3>
+          <p>Istražite skrivene staze kroz planinske predjele</p>
+        </div>
+
+        <div class="feature-card glass-card reveal" style="--delay: 0.1s">
+          <div class="feature-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Sigurna Oprema</h3>
+          <p>Profesionalna oprema i obuka za sve učesnike</p>
+        </div>
+
+        <div class="feature-card glass-card reveal" style="--delay: 0.2s">
+          <div class="feature-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3>Grupne Ture</h3>
+          <p>Idealno za porodice, prijatelje i timove</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="galerija">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag glass-card">Galerija</span>
+        <h2 class="section-title">Avanture naših<br><span class="accent">gostiju</span></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item glass-card reveal" style="--delay: 0s">
+          <div class="gallery-img" style="background-image: url('images/quad1.jpg')"></div>
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item glass-card reveal" style="--delay: 0.1s">
+          <div class="gallery-img" style="background-image: url('images/quad2.jpg')"></div>
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item glass-card reveal" style="--delay: 0.2s">
+          <div class="gallery-img" style="background-image: url('images/quad3.jpg')"></div>
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+        <div class="gallery-item glass-card reveal" style="--delay: 0.3s">
+          <div class="gallery-img" style="background-image: url('images/quad4.jpg')"></div>
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-wrapper glass-card reveal">
+        <div class="booking-content">
+          <span class="section-tag">Rezervacija</span>
+          <h2 class="section-title">Rezerviši svoju<br><span class="accent">avanturu</span></h2>
+          <p class="booking-text">Odaberite željeni datum i pošaljite nam poruku putem WhatsApp-a</p>
+        </div>
+
+        <div class="booking-form">
+          <div class="input-wrapper">
+            <i class="fa-regular fa-calendar"></i>
+            <input type="date" id="tour-date" class="glass-input">
+          </div>
+
+          <a class="btn btn-primary btn-large glow-effect" href="https://wa.me/38268593203" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Pošalji rezervaciju</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section" id="lokacija">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag glass-card">Lokacija</span>
+        <h2 class="section-title">Pronađite<br><span class="accent">nas</span></h2>
+      </div>
+
+      <div class="map-wrapper glass-card reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.270598259984!2d19.541982475251412!3d42.82489750560932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d7d093162e94d%3A0xe1fcc1ac6fd625c1!2sGolden%20House!5e0!3m2!1sen!2sus!4v1769544425503!5m2!1sen!2sus"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <span class="section-tag glass-card">Kontakt</span>
+          <h2 class="section-title">Javite nam<br><span class="accent">se</span></h2>
+          
+          <div class="contact-links">
+            <a href="tel:+38268593203" class="contact-link glass-card">
+              <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <span class="label">Telefon</span>
+                <span class="value">+382 68 593 203</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/38268593203" target="_blank" rel="noopener" class="contact-link glass-card">
+              <div class="contact-icon whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <span class="label">WhatsApp</span>
+                <span class="value">Pišite nam direktno</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/montequadtourkolasin/" target="_blank" rel="noopener" class="contact-link glass-card">
+              <div class="contact-icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="contact-details">
+                <span class="label">Instagram</span>
+                <span class="value">@montequadtourkolasin</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Monte<span class="accent">Quad</span></h3>
+          <p>Avantura počinje ovdje</p>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 MonteQuad Kolašin. Sva prava zadržana.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/38268593203" class="whatsapp-float glass-card" target="_blank" rel="noopener" aria-label="Kontaktirajte nas putem WhatsApp-a">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="pulse-ring"></span>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Reveal on Scroll Animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Parallax Effect for Floating Shapes
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolled = window.pageYOffset;
+          const shapes = document.querySelectorAll('.shape');
+          shapes.forEach((shape, i) => {
+            const speed = (i + 1) * 0.1;
+            shape.style.transform = `translateY(${scrolled * speed}px)`;
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // Navbar Glass Effect on Scroll
+    const langNav = document.querySelector('.lang-nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        langNav.classList.add('scrolled');
+      } else {
+        langNav.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
