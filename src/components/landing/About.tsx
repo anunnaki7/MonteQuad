@@ -1,4 +1,4 @@
-import { Mountain, Heart, Award } from "lucide-react";
+import { Calendar, Mountain, Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
@@ -28,31 +28,31 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="reveal glass-card p-6 text-center" style={{ animationDelay: "0.1s" }}>
               <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-2xl text-primary">
-                <Mountain className="w-7 h-7" />
+                <Calendar className="w-7 h-7" />
               </div>
-              <div className="font-display text-3xl font-bold text-primary mb-1">5+</div>
+              <div className="font-display text-3xl font-bold text-primary mb-1">2025</div>
               <div className="text-sm text-muted-foreground">
-                {t("features.route.title")}
+                {t("about.founded")}
               </div>
             </div>
 
             <div className="reveal glass-card p-6 text-center" style={{ animationDelay: "0.2s" }}>
               <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-secondary/10 rounded-2xl text-secondary">
-                <Heart className="w-7 h-7" />
+                <Mountain className="w-7 h-7" />
               </div>
-              <div className="font-display text-3xl font-bold text-secondary mb-1">500+</div>
+              <div className="font-display text-3xl font-bold text-secondary mb-1">2</div>
               <div className="text-sm text-muted-foreground">
-                {t("gallery.title2")}
+                {t("about.mountains")}
               </div>
             </div>
 
             <div className="reveal glass-card p-6 text-center" style={{ animationDelay: "0.3s" }}>
               <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-primary/10 rounded-2xl text-primary">
-                <Award className="w-7 h-7" />
+                <Sparkles className="w-7 h-7" />
               </div>
-              <div className="font-display text-3xl font-bold text-primary mb-1">5★</div>
+              <div className="font-display text-3xl font-bold text-primary mb-1">∞</div>
               <div className="text-sm text-muted-foreground">
-                Rating
+                {t("about.custom")}
               </div>
             </div>
           </div>

@@ -27,11 +27,16 @@ const translations: Translations = {
 
   // About
   "about.badge": { me: "O Nama", en: "About Us" },
-  "about.title1": { me: "Vaša avantura", en: "Your adventure" },
-  "about.title2": { me: "počinje ovdje", en: "starts here" },
-  "about.p1": { me: "Dobrodošli u MonteQuad Kolašin! Mi smo tim ljubitelja avanture i prirode koji žele da vam prikažu ljepote crnogorskih planina na jedinstven način.", en: "Welcome to MonteQuad Kolašin! We are a team of adventure and nature enthusiasts who want to show you the beauty of Montenegrin mountains in a unique way." },
-  "about.p2": { me: "Sa višegodišnjim iskustvom u organizovanju quad i buggy tura, garantujemo vam nezaboravno iskustvo uz maksimalnu sigurnost i profesionalnost.", en: "With years of experience organizing quad and buggy tours, we guarantee you an unforgettable experience with maximum safety and professionalism." },
-  "about.p3": { me: "Naše ture vas vode kroz najljepše planinske staze Bjelasice i Komova, gdje ćete uživati u spektakularnim pogledima i čistom planinskom vazduhu.", en: "Our tours take you through the most beautiful mountain trails of Bjelasica and Komovi, where you will enjoy spectacular views and fresh mountain air." },
+  "about.title1": { me: "Upoznajte", en: "Meet" },
+  "about.title2": { me: "MonteQuad", en: "MonteQuad" },
+  "about.p1": { me: "Dobrodošli u MonteQuad Kolašin! Iza ovog projekta stoji Pavle Bulatović, osnivač MonteQuad-a od 2025. godine. Sa strašću prema prirodi i adrenalinu, nudimo vam jedinstveno iskustvo vožnje quad i buggy vozilima kroz crnogorske planine.", en: "Welcome to MonteQuad Kolašin! Behind this project is Pavle Bulatović, founder of MonteQuad since 2025. With a passion for nature and adrenaline, we offer you a unique experience of quad and buggy rides through Montenegrin mountains." },
+  "about.p2": { me: "Naše ture vas vode kroz spektakularne predele planina Goleš i Bjelasica. Možemo organizovati ture po vašoj želji - prilagođavamo rute i trajanje prema vašim potrebama.", en: "Our tours take you through spectacular landscapes of Goleš and Bjelasica mountains. We can organize custom tours - adapting routes and duration to your needs." },
+  "about.p3": { me: "Posebna ponuda: iznajmite apartman i dobijte popust na quad ture! Kombinujte smještaj i avanturu za kompletno planinsko iskustvo po povoljnijim cijenama.", en: "Special offer: rent an apartment and get a discount on quad tours! Combine accommodation and adventure for a complete mountain experience at better prices." },
+
+  // About extra
+  "about.founded": { me: "Osnovano", en: "Founded" },
+  "about.mountains": { me: "Planine", en: "Mountains" },
+  "about.custom": { me: "Ture po želji", en: "Custom Tours" },
 
   // Pricing
   "pricing.badge": { me: "Cijene", en: "Pricing" },

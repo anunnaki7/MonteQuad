@@ -8,14 +8,14 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen min-h-[100dvh] flex items-center justify-center relative px-4 py-20">
-      {/* Hero Background Image */}
+      {/* Hero Background Image - optimized for mobile */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-[center_30%] md:bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
       </div>
 
       <div className="text-center z-10 max-w-4xl mx-auto">
