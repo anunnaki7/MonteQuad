@@ -1,4 +1,8 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-8 border-t border-border">
       <div className="container">
@@ -8,11 +12,11 @@ const Footer = () => {
               Monte<span className="text-primary">Quad</span>
             </h3>
             <p className="text-sm text-muted-foreground">
-              Avantura počinje ovdje
+              {t("footer.tagline")}
             </p>
           </div>
           <p className="text-sm text-muted-foreground">
-            &copy; 2026 MonteQuad Kolašin. Sva prava zadržana.
+            &copy; 2026 MonteQuad Kolašin. {t("footer.rights")}.
           </p>
         </div>
       </div>

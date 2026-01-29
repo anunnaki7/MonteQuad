@@ -1,31 +1,34 @@
 import { Route, Shield, Users } from "lucide-react";
-
-const features = [
-  {
-    icon: Route,
-    title: "Jedinstvene Rute",
-    description: "Istražite skrivene staze kroz planinske predele",
-  },
-  {
-    icon: Shield,
-    title: "Sigurna Oprema",
-    description: "Profesionalna oprema i obuka za sve učesnike",
-  },
-  {
-    icon: Users,
-    title: "Grupne Ture",
-    description: "Idealno za porodice, prijatelje i timove",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: Route,
+      title: t("features.route.title"),
+      description: t("features.route.desc"),
+    },
+    {
+      icon: Shield,
+      title: t("features.safety.title"),
+      description: t("features.safety.desc"),
+    },
+    {
+      icon: Users,
+      title: t("features.group.title"),
+      description: t("features.group.desc"),
+    },
+  ];
+
   return (
     <section className="py-20 md:py-32 px-4">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
-              key={feature.title}
+              key={index}
               className="reveal glass-card p-8 text-center relative overflow-hidden group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
