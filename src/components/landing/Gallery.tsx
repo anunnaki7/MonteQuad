@@ -1,12 +1,12 @@
 import { Expand } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const images = [
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
-  "https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?w=600",
-  "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600",
-  "https://images.unsplash.com/photo-1527095655346-80121ef6c36e?w=600",
-];
+import quad1 from "../../assets/quad1.jpg";
+import quad2 from "../../assets/quad2.jpg";
+import quad3 from "../../assets/quad3.jpg";
+import quad4 from "../../assets/quad4.jpg";
+
+const images = [quad1, quad2, quad3, quad4];
 
 const Gallery = () => {
   const { t } = useLanguage();
