@@ -1,6 +1,9 @@
 import { Phone } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="kontakt" className="py-20 md:py-32 px-4">
       <div className="container">
@@ -8,11 +11,11 @@ const Contact = () => {
           {/* Header */}
           <div className="reveal text-center mb-12">
             <span className="inline-block px-4 py-2 rounded-full glass-card text-xs font-medium text-primary uppercase tracking-widest mb-6">
-              Kontakt
+              {t("contact.badge")}
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold">
-              Javite nam<br />
-              <span className="text-primary">se</span>
+              {t("contact.title1")}<br />
+              <span className="text-primary">{t("contact.title2")}</span>
             </h2>
           </div>
 
@@ -28,7 +31,7 @@ const Contact = () => {
               </div>
               <div>
                 <span className="block text-xs text-muted-foreground uppercase tracking-wider">
-                  Telefon
+                  {t("contact.phone")}
                 </span>
                 <span className="font-medium">+382 68 593 203</span>
               </div>
@@ -50,7 +53,7 @@ const Contact = () => {
                 <span className="block text-xs text-muted-foreground uppercase tracking-wider">
                   WhatsApp
                 </span>
-                <span className="font-medium">Pišite nam direktno</span>
+                <span className="font-medium">{t("contact.whatsapp")}</span>
               </div>
             </a>
 

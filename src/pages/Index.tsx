@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
+import About from "@/components/landing/About";
+import Pricing from "@/components/landing/Pricing";
 import Gallery from "@/components/landing/Gallery";
 import Booking from "@/components/landing/Booking";
 import MapSection from "@/components/landing/MapSection";
@@ -39,6 +41,8 @@ const Index = () => {
       <LanguageNav />
       <Hero />
       <Features />
+      <About />
+      <Pricing />
       <Gallery />
       <Booking />
       <MapSection />

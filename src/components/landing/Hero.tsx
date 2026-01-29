@@ -1,14 +1,28 @@
 import { Mountain, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import heroImage from "@/assets/hero-quad.jpg";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="min-h-screen min-h-[100dvh] flex items-center justify-center relative px-4 py-20">
+      {/* Hero Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent" />
+      </div>
+
       <div className="text-center z-10 max-w-4xl mx-auto">
         {/* Badge */}
         <div className="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-muted-foreground mb-8">
           <Mountain className="w-4 h-4 text-primary" />
-          <span>Kolašin, Crna Gora</span>
+          <span>{t("hero.location")}</span>
         </div>
 
         {/* Title */}
@@ -19,8 +33,8 @@ const Hero = () => {
 
         {/* Subtitle */}
         <p className="reveal text-lg md:text-xl text-muted-foreground mb-10 max-w-md mx-auto leading-relaxed" style={{ animationDelay: "0.2s" }}>
-          Doživite avanturu uz organizovane<br />
-          <span className="text-foreground font-medium">quad i buggy ture</span>
+          {t("hero.subtitle")}<br />
+          <span className="text-foreground font-medium">{t("hero.highlight")}</span>
         </p>
 
         {/* Buttons */}
@@ -32,7 +46,7 @@ const Hero = () => {
           >
             <a href="#booking">
               <CalendarCheck className="w-5 h-5 mr-2" />
-              Rezerviši turu
+              {t("hero.cta")}
             </a>
           </Button>
 
@@ -56,7 +70,7 @@ const Hero = () => {
           <div className="w-6 h-10 border-2 border-border rounded-full flex justify-center pt-2">
             <div className="w-1 h-2 bg-primary rounded-full animate-scroll-wheel" />
           </div>
-          <span className="text-xs text-muted-foreground uppercase tracking-widest">Skroluj dole</span>
+          <span className="text-xs text-muted-foreground uppercase tracking-widest">{t("hero.scroll")}</span>
         </div>
       </div>
     </section>

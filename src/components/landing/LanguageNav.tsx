@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const LanguageNav = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,19 +19,27 @@ const LanguageNav = () => {
         scrolled ? "bg-black/80 backdrop-blur-[40px]" : ""
       }`}
     >
-      <a 
-        href="#" 
-        className="text-primary bg-primary/10 px-3 py-1 rounded-full text-sm font-medium transition-all hover:bg-primary/20"
+      <button 
+        onClick={() => setLanguage("me")}
+        className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
+          language === "me" 
+            ? "text-primary bg-primary/10" 
+            : "text-muted-foreground hover:text-primary hover:bg-primary/10"
+        }`}
       >
         ME
-      </a>
+      </button>
       <span className="w-px h-4 bg-border" />
-      <a 
-        href="#" 
-        className="text-muted-foreground hover:text-primary px-3 py-1 rounded-full text-sm font-medium transition-all hover:bg-primary/10"
+      <button 
+        onClick={() => setLanguage("en")}
+        className={`px-3 py-1 rounded-full text-sm font-medium transition-all ${
+          language === "en" 
+            ? "text-primary bg-primary/10" 
+            : "text-muted-foreground hover:text-primary hover:bg-primary/10"
+        }`}
       >
         EN
-      </a>
+      </button>
     </nav>
   );
 };

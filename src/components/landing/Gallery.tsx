@@ -1,4 +1,5 @@
 import { Expand } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const images = [
   "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
@@ -8,17 +9,19 @@ const images = [
 ];
 
 const Gallery = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="galerija" className="py-20 md:py-32 px-4">
       <div className="container">
         {/* Header */}
         <div className="reveal text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full glass-card text-xs font-medium text-primary uppercase tracking-widest mb-6">
-            Galerija
+            {t("gallery.badge")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold">
-            Avanture naših<br />
-            <span className="text-primary">gostiju</span>
+            {t("gallery.title1")}<br />
+            <span className="text-primary">{t("gallery.title2")}</span>
           </h2>
         </div>
 
