@@ -8,7 +8,7 @@ const Pricing = () => {
   const packages = [
     {
       name: t("pricing.quad.title"),
-      price: "€50",
+      price: "€70",
       duration: t("pricing.quad.duration"),
       features: [
         t("pricing.quad.feature1"),
@@ -19,7 +19,7 @@ const Pricing = () => {
     },
     {
       name: t("pricing.buggy.title"),
-      price: "€80",
+      price: "€160",
       duration: t("pricing.buggy.duration"),
       features: [
         t("pricing.buggy.feature1"),
@@ -30,7 +30,7 @@ const Pricing = () => {
     },
     {
       name: t("pricing.premium.title"),
-      price: "€150",
+      price: "€180",
       duration: t("pricing.premium.duration"),
       features: [
         t("pricing.premium.feature1"),
