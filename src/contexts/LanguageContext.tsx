@@ -62,6 +62,8 @@ const translations: Translations = {
   "pricing.premium.feature4": { me: "Profesionalno fotografisanje", en: "Professional photography" },
   "pricing.book": { me: "Rezerviši", en: "Book Now" },
   "pricing.contact": { me: "Kontaktirajte nas za tačnu cijenu", en: "Contact us for exact price" },
+  "pricing.popular": { me: "Popularno", en: "Popular" },
+  "pricing.perPerson": { me: "/os", en: "/pp" },
 
   // Gallery
   "gallery.badge": { me: "Galerija", en: "Gallery" },
