@@ -71,7 +71,7 @@ const Pricing = () => {
               {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute top-4 right-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
-                  Popular
+                  {t("pricing.popular")}
                 </div>
               )}
 
@@ -81,7 +81,7 @@ const Pricing = () => {
                 <p className="text-sm text-muted-foreground mb-4">{pkg.duration}</p>
                 <div className="font-display text-4xl font-bold text-primary">
                   {pkg.price}
-                  <span className="text-lg text-muted-foreground font-normal">/os</span>
+                  <span className="text-lg text-muted-foreground font-normal">{t("pricing.perPerson")}</span>
                 </div>
               </div>
 
