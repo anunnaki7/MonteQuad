@@ -62,8 +62,8 @@ const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {packages.map((pkg, index) => (
             <div
-              key={pkg.name}
-              className={`reveal glass-card p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
+              key={index}
+              className={`revealed glass-card p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
                 pkg.popular ? "ring-2 ring-primary" : ""
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}

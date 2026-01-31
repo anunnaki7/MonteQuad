@@ -16,23 +16,39 @@ const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            observerRef.current?.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
-    );
+    const setupObserver = () => {
+      observerRef.current?.disconnect();
+      
+      observerRef.current = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              observerRef.current?.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      );
 
-    document.querySelectorAll(".reveal").forEach((el) => {
-      observerRef.current?.observe(el);
+      document.querySelectorAll(".reveal:not(.revealed)").forEach((el) => {
+        observerRef.current?.observe(el);
+      });
+    };
+
+    setupObserver();
+
+    // Re-observe on DOM changes (language switch)
+    const mutationObserver = new MutationObserver(() => {
+      setupObserver();
     });
+    
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
-    return () => observerRef.current?.disconnect();
+    return () => {
+      observerRef.current?.disconnect();
+      mutationObserver.disconnect();
+    };
   }, []);
 
   return (
