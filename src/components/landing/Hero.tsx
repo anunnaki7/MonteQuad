@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="min-h-screen min-h-[100dvh] flex items-center justify-center relative px-4 py-20">
       {/* Hero Background Image - optimized for mobile */}
       <div 
-        className="absolute inset-0 bg-cover bg-[center_30%] md:bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-[35%_30%] md:bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         {/* Gradient Overlay */}
