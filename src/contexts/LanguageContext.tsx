@@ -87,6 +87,12 @@ const translations: Translations = {
   // Footer
   "footer.tagline": { me: "Avantura počinje ovdje", en: "Adventure starts here" },
   "footer.rights": { me: "Sva prava zadržana", en: "All rights reserved" },
+
+  // Map
+  "map.badge": { me: "Lokacija", en: "Location" },
+  "map.title1": { me: "Pronađite", en: "Find" },
+  "map.title2": { me: "nas", en: "us" },
+  "map.title": { me: "MonteQuad Kolašin lokacija", en: "MonteQuad Kolašin location" },
 };
 
 interface LanguageContextType {

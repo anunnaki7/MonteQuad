@@ -63,10 +63,10 @@ const Pricing = () => {
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className={`revealed glass-card p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
+              className={`reveal glass-card p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 ${
                 pkg.popular ? "ring-2 ring-primary" : ""
               }`}
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ "--delay": `${index * 0.15}s` } as React.CSSProperties}
             >
               {/* Popular Badge */}
               {pkg.popular && (
