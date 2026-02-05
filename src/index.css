@@ -165,11 +165,19 @@
 
   /* Reveal Animation */
   .reveal {
-    @apply opacity-0 translate-y-8 transition-all duration-700;
+    @apply opacity-0 transition-all;
+    transform: translateY(40px);
+    transition-duration: 0.9s;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .reveal.revealed {
     @apply opacity-100 translate-y-0;
+  }
+
+  /* Staggered reveal delays */
+  .reveal[style*="--delay"] {
+    transition-delay: var(--delay, 0s);
   }
 }
 
@@ -225,6 +233,25 @@
 .animate-gradient-shift {
   animation: gradient-shift 15s ease-in-out infinite;
 }
+
+/* Liquid entrance for hero elements */
+.hero-reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: heroEntrance 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes heroEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-reveal:nth-child(1) { animation-delay: 0s; }
+.hero-reveal:nth-child(2) { animation-delay: 0.15s; }
+.hero-reveal:nth-child(3) { animation-delay: 0.3s; }
+.hero-reveal:nth-child(4) { animation-delay: 0.45s; }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

@@ -1,15 +1,19 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const MapSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="lokacija" className="py-20 md:py-32 px-4">
       <div className="container">
         {/* Header */}
         <div className="reveal text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full glass-card text-xs font-medium text-primary uppercase tracking-widest mb-6">
-            Lokacija
+            {t("map.badge")}
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold">
-            Pronađite<br />
-            <span className="text-primary">nas</span>
+            {t("map.title1")}<br />
+            <span className="text-primary">{t("map.title2")}</span>
           </h2>
         </div>
 
@@ -20,7 +24,7 @@ const MapSection = () => {
             className="w-full h-80 md:h-[400px] rounded-xl border-0 grayscale-[0.3] contrast-110 hover:grayscale-0 hover:contrast-100 transition-all duration-300"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="MonteQuad Kolašin lokacija"
+            title={t("map.title")}
           />
         </div>
       </div>

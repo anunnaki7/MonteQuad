@@ -20,25 +20,25 @@ const Hero = () => {
 
       <div className="text-center z-10 max-w-4xl mx-auto">
         {/* Badge */}
-        <div className="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-muted-foreground mb-8">
+        <div className="hero-reveal inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-muted-foreground mb-8">
           <Mountain className="w-4 h-4 text-primary" />
           <span>{t("hero.location")}</span>
         </div>
 
         {/* Title */}
-        <h1 className="reveal font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6" style={{ animationDelay: "0.1s" }}>
+        <h1 className="hero-reveal font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
           <span className="block">Monte</span>
           <span className="block text-gradient">Quad</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="reveal text-lg md:text-xl text-muted-foreground mb-10 max-w-md mx-auto leading-relaxed" style={{ animationDelay: "0.2s" }}>
+        <p className="hero-reveal text-lg md:text-xl text-muted-foreground mb-10 max-w-md mx-auto leading-relaxed">
           {t("hero.subtitle")}<br />
           <span className="text-foreground font-medium">{t("hero.highlight")}</span>
         </p>
 
         {/* Buttons */}
-        <div className="reveal flex flex-col sm:flex-row gap-4 justify-center" style={{ animationDelay: "0.3s" }}>
+        <div className="hero-reveal flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             asChild 
             size="lg" 
