@@ -54,20 +54,23 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-x-hidden">
-      <BackgroundEffects />
-      <LanguageNav />
-      <Hero />
-      <Features />
-      <About />
-      <Pricing />
-      <Gallery />
-      <Booking />
-      <MapSection />
-      <Contact />
-      <Footer />
-      <WhatsAppFloat />
-    </div>
+    <>
+      {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}
+      <div className="min-h-screen relative overflow-x-hidden">
+        <BackgroundEffects />
+        <LanguageNav />
+        <Hero />
+        <Features />
+        <About />
+        <Pricing />
+        <Gallery />
+        <Booking />
+        <MapSection />
+        <Contact />
+        <Footer />
+        <WhatsAppFloat />
+      </div>
+    </>
   );
 };
 
