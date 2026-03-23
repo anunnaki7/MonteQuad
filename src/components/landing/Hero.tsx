@@ -1,7 +1,7 @@
 import { Mountain, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImage from "@/assets/hero-quad.jpg";
+import heroImage from "@/assets/montequad-logo.jpg";
 
 const Hero = () => {
   const { t } = useLanguage();
