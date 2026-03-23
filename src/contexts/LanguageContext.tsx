@@ -28,8 +28,8 @@ const translations: Translations = {
   // About
   "about.badge": { me: "O Nama", en: "About Us" },
   "about.title1": { me: "Upoznajte", en: "Meet" },
-  "about.title2": { me: "MonteQuad", en: "MonteQuad" },
-  "about.p1": { me: "Dobrodošli u MonteQuad Kolašin! Iza ovog projekta stoji Pavle Bulatović, osnivač MonteQuad-a od 2025. godine. Sa strašću prema prirodi i adrenalinu, nudimo vam jedinstveno iskustvo vožnje quad i buggy vozilima kroz crnogorske planine.", en: "Welcome to MonteQuad Kolašin! Behind this project is Pavle Bulatović, founder of MonteQuad since 2025. With a passion for nature and adrenaline, we offer you a unique experience of quad and buggy rides through Montenegrin mountains." },
+  "about.title2": { me: "MonteQuad & Buggy", en: "MonteQuad & Buggy" },
+  "about.p1": { me: "Dobrodošli u MonteQuad & Buggy Kolasin! Iza ovog projekta stoji Pavle Bulatović, osnivač od 2025. godine. Sa strašću prema prirodi i adrenalinu, nudimo vam jedinstveno iskustvo vožnje quad i buggy vozilima kroz crnogorske planine.", en: "Welcome to MonteQuad & Buggy Kolasin! Behind this project is Pavle Bulatović, founder since 2025. With a passion for nature and adrenaline, we offer you a unique experience of quad and buggy rides through Montenegrin mountains." },
   "about.p2": { me: "Naše ture vas vode kroz spektakularne predele planina Goleš i Bjelasica. Možemo organizovati ture po vašoj želji - prilagođavamo rute i trajanje prema vašim potrebama.", en: "Our tours take you through spectacular landscapes of Goleš and Bjelasica mountains. We can organize custom tours - adapting routes and duration to your needs." },
   "about.p3": { me: "Posebna ponuda: iznajmite apartman i dobijte popust na quad ture! Kombinujte smještaj i avanturu za kompletno planinsko iskustvo po povoljnijim cijenama.", en: "Special offer: rent an apartment and get a discount on quad tours! Combine accommodation and adventure for a complete mountain experience at better prices." },
 

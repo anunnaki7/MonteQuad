@@ -1,7 +1,7 @@
 import { Mountain, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImage from "@/assets/hero-quad.jpg";
+import heroImage from "@/assets/montequad-logo.jpg";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -65,8 +65,8 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-bounce-gentle hidden md:flex">
+        {/* Scroll Indicator - centered, below buttons with enough spacing */}
+        <div className="hero-reveal flex flex-col items-center gap-3 animate-bounce-gentle mt-12 hidden md:flex">
           <div className="w-6 h-10 border-2 border-border rounded-full flex justify-center pt-2">
             <div className="w-1 h-2 bg-primary rounded-full animate-scroll-wheel" />
           </div>
