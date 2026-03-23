@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoImage from "@/assets/montequad-logo.jpg";
+import logoImage from "@/assets/montequad-logo-transparent.png";
 
 const Preloader = ({ onComplete }: { onComplete: () => void }) => {
   const [phase, setPhase] = useState<"show" | "fade">("show");
