@@ -328,8 +328,7 @@
   height: 100%;
   object-fit: contain;
   display: block;
-  /* Invert the black logo to white so it blends on dark background */
-  filter: invert(1) brightness(1.1);
+  filter: drop-shadow(0 4px 24px hsl(0 0% 0% / 0.5));
 }
 
 .preloader-shimmer {
