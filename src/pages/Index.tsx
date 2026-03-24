@@ -12,7 +12,6 @@ import WhatsAppFloat from "@/components/landing/WhatsAppFloat";
 import LanguageNav from "@/components/landing/LanguageNav";
 import BackgroundEffects from "@/components/landing/BackgroundEffects";
 import Preloader from "@/components/landing/Preloader";
-import BackToTop from "@/components/landing/BackToTop";
 
 const Index = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -70,7 +69,6 @@ const Index = () => {
         <Contact />
         <Footer />
         <WhatsAppFloat />
-        <BackToTop />
       </div>
     </>
   );
