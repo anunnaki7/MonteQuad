@@ -20,7 +20,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       style={{
         position: "fixed",
         inset: 0,
-        zIndex: 9999,
+        zIndex: 99999,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
