@@ -5,9 +5,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
   const [phase, setPhase] = useState<"show" | "fade">("show");
 
   useEffect(() => {
-    // After 1.6s show → start fade
     const fadeTimer = setTimeout(() => setPhase("fade"), 1600);
-    // After fade (600ms) → complete
     const doneTimer = setTimeout(() => onComplete(), 2200);
     return () => {
       clearTimeout(fadeTimer);
@@ -35,11 +33,10 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
           src={logoImage}
           alt="MonteQuad & Buggy Kolasin"
           className="preloader-logo"
+          style={{ mixBlendMode: "normal" }}
         />
-        <div className="preloader-shimmer" />
       </div>
 
-      {/* Subtle tagline */}
       <p
         className="preloader-tagline"
         style={{
