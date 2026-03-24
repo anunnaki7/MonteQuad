@@ -61,11 +61,8 @@ To explore or modify this project locally:
 
 ---
 
-## 📸 Preview
-
-> [!IMPORTANT]
-> To display a preview image, add your screenshot to an `assets` folder and update the link below:
-> `![Monte KL Preview](https://www.site-shot.com/cached_image/XJv9WCdqEfGikQJCrBEAAw)`
+## 📸 Screenshot
+![Website Screenshot](https://www.site-shot.com/cached_image/XJv9WCdqEfGikQJCrBEAAw)
 
 ---
 
