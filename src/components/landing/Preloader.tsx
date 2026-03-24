@@ -33,7 +33,6 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
           src={logoImage}
           alt="MonteQuad & Buggy Kolasin"
           className="preloader-logo"
-          style={{ mixBlendMode: "normal" }}
         />
       </div>
 
