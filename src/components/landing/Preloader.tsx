@@ -62,6 +62,14 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             : phase === "fade"
             ? "opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1)"
             : "opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1)",
+          /* Isolation omogućava da mix-blend-mode radi samo unutar ovog elementa */
+          isolation: "isolate",
+          borderRadius: "18px",
+          overflow: "hidden",
+          /* Tamna pozadina iste boje kao background preloadera — 
+             pokriva bijele uglove PNG-a bez da utječe na logo */
+          background: "hsl(240 20% 2%)",
+          boxShadow: "0 8px 40px hsl(150 60% 20% / 0.5), 0 2px 12px hsl(0 0% 0% / 0.8)",
         }}
       >
         <img
@@ -72,8 +80,11 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             height: "100%",
             objectFit: "contain",
             display: "block",
-            filter: "drop-shadow(0 8px 32px hsl(150 60% 20% / 0.6)) drop-shadow(0 2px 8px hsl(0 0% 0% / 0.8))",
-          }}
+            /* screen blend mode: bijela pozadina slike + tamni bg diva = 
+               bijeli pikseli se "spajaju" i nestaju, logo ostaje čist */
+            mixBlendMode: "screen",
+            imageRendering: "auto",
+          } as React.CSSProperties}
         />
       </div>
 
