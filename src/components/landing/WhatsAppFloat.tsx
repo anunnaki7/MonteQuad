@@ -2,7 +2,7 @@ const WhatsAppFloat = () => {
   return (
     <a
       href="https://wa.me/38268593203"
-      className="fixed bottom-6 right-6 w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-[#25D366] rounded-full text-white text-2xl md:text-3xl z-50 shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_30px_rgba(37,211,102,0.6)] hover:scale-110 hover:rotate-12 transition-all duration-500"
+      className="fixed bottom-6 right-6 w-14 h-14 md:w-16 md:h-16 flex items-center justify-center bg-[#25D366] rounded-full text-white text-2xl md:text-3xl z-[8000] shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_30px_rgba(37,211,102,0.6)] hover:scale-110 hover:rotate-12 transition-all duration-500"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Kontaktirajte nas putem WhatsApp-a"

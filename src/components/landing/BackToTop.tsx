@@ -21,10 +21,10 @@ const BackToTop = () => {
       onClick={scrollToTop}
       aria-label="Back to top"
       style={{
-        position: "fixed",
-        bottom: "2rem",
-        right: "2rem",
-        zIndex: 9000,
+      position: "fixed",
+        bottom: "5.5rem",
+        right: "1.6rem",
+        zIndex: 8500,
         width: "2.75rem",
         height: "2.75rem",
         borderRadius: "50%",
