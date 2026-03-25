@@ -62,7 +62,7 @@ To explore or modify this project locally:
 ---
 
 ## 📸 Screenshot
-[Website Screenshot] (https://www.site-shot.com/cached_image/tbu0VChHEfG7_gJCrBEABw)
+![Website Screenshot](https://www.site-shot.com/cached_image/tbu0VChHEfG7_gJCrBEABw)
 
 ---
 
