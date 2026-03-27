@@ -2,20 +2,34 @@ import { useEffect, useState, useRef } from "react";
 import logoImage from "@/assets/montequad-logo-transparent.png";
 
 // ─── Fuel Segment ──────────────────────────────────────────────────────────────
-const FuelSegment = ({ filled, index }: { filled: boolean; index: number }) => (
-  <div
-    style={{
-      flex: 1,
-      height: "100%",
-      background: filled
-        ? "linear-gradient(180deg, hsl(168 100% 55%), hsl(150 90% 40%))"
-        : "hsl(0 0% 100% / 0.04)",
-      borderRadius: "2px",
-      boxShadow: filled ? "0 0 6px hsl(155 90% 50% / 0.6)" : "none",
-      transition: `background 0.1s ease ${index * 0.04}s, box-shadow 0.1s ease ${index * 0.04}s`,
-    }}
-  />
-);
+const FuelSegment = ({ filled, index, total }: { filled: boolean; index: number; total: number }) => {
+  // Gorivo paleta: puna - amber→narančasto→crvena (kao prava rezervoar boja)
+  const pct = index / (total - 1);
+  const filledBg = pct < 0.35
+    ? "linear-gradient(180deg, hsl(0 90% 58%), hsl(0 85% 42%))"       // crvena (malo goriva)
+    : pct < 0.65
+    ? "linear-gradient(180deg, hsl(22 95% 58%), hsl(18 90% 42%))"     // narančasta (srednje)
+    : "linear-gradient(180deg, hsl(40 100% 58%), hsl(35 95% 44%))";   // amber/žuta (puno)
+
+  const filledGlow = pct < 0.35
+    ? "0 0 7px hsl(0 90% 52% / 0.7)"
+    : pct < 0.65
+    ? "0 0 7px hsl(22 95% 52% / 0.65)"
+    : "0 0 7px hsl(40 100% 55% / 0.6)";
+
+  return (
+    <div
+      style={{
+        flex: 1,
+        height: "100%",
+        background: filled ? filledBg : "hsl(0 0% 100% / 0.04)",
+        borderRadius: "2px",
+        boxShadow: filled ? filledGlow : "none",
+        transition: `background 0.1s ease ${index * 0.04}s, box-shadow 0.1s ease ${index * 0.04}s`,
+      }}
+    />
+  );
+};
 
 // ─── RPM Ring SVG ──────────────────────────────────────────────────────────────
 const RpmRing = ({
@@ -537,7 +551,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             <div style={{ display: "flex", alignItems: "center", gap: "0.8rem" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
                 <svg width="9" height="12" viewBox="0 0 10 13" fill="none">
-                  <path d="M5 1 C5 1, 1 6, 1 8.5 A4 4 0 0 0 9 8.5 C9 6 5 1 5 1Z" fill="hsl(155 90% 52% / 0.65)" />
+                  <path d="M5 1 C5 1, 1 6, 1 8.5 A4 4 0 0 0 9 8.5 C9 6 5 1 5 1Z" fill="hsl(0 90% 58% / 0.85)" filter="drop-shadow(0 0 3px hsl(0 90% 55% / 0.7))" />
                 </svg>
                 <span style={{
                   fontFamily: "'Space Grotesk', sans-serif",
@@ -552,7 +566,8 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
                 fontSize: "0.6rem",
                 fontWeight: 700,
                 letterSpacing: "0.08em",
-                color: "hsl(155 100% 62% / 0.88)",
+                color: "hsl(35 100% 62% / 0.95)",
+                textShadow: "0 0 10px hsl(30 100% 55% / 0.6)",
                 minWidth: "2.4rem",
                 textAlign: "right",
                 animation: isVisible ? "counterFlicker 2.2s ease 2.2s infinite" : "none",
@@ -570,11 +585,11 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
               padding: "1.5px",
               background: "hsl(0 0% 100% / 0.04)",
               borderRadius: "4px",
-              border: "1px solid hsl(150 35% 22% / 0.35)",
-              boxShadow: "inset 0 1px 4px hsl(0 0% 0% / 0.5), 0 0 16px hsl(150 50% 14% / 0.25)",
+              border: "1px solid hsl(20 40% 22% / 0.5)",
+              boxShadow: "inset 0 1px 4px hsl(0 0% 0% / 0.55), 0 0 16px hsl(15 60% 14% / 0.35)",
             }}>
               {Array.from({ length: segments }).map((_, i) => (
-                <FuelSegment key={i} filled={i < filledSegments} index={i} />
+                <FuelSegment key={i} filled={i < filledSegments} index={i} total={segments} />
               ))}
             </div>
 
