@@ -1,11 +1,11 @@
-# ⚡ Monte KL — Neo-Brutalist UI / Liquid UX
+# ⚡ MonteQuad&Buggy tour Kolašin — Neo-Brutalist UI / Liquid UX
 
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
-**Monte KL** is a high-performance portfolio concept that merges the raw, unapologetic aesthetic of **Neo-Brutalism** with a fluid **Liquid UX** approach. This project is a deep dive into high-contrast design, bold typography, and surgical-grade code optimization.
+**MonteQuad&Buggy tour Kolašin** is a high-performance portfolio concept that merges the raw, unapologetic aesthetic of **Neo-Brutalism** with a fluid **Liquid UX** approach. This project is a deep dive into high-contrast design, bold typography, and surgical-grade code optimization.
 
 [**🌐 Live Demo**](https://brutal-ui-liquid-ux.vercel.app/) • [**📂 Repository**](https://github.com/anunnaki7/brutal-ui-liquid-ux)
 
