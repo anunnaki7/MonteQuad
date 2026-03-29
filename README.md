@@ -62,7 +62,7 @@ To explore or modify this project locally:
 ---
 
 ## 📸 Screenshot
-![Website Screenshot](src/assets/screenshotmone.png)
+![Website Screenshot](src/assets/screenshotmonte.png)
 
 ---
 
