@@ -6,7 +6,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
 <p align="center">
-  <img src="src/assets/montequad-logo.jpg" alt="Logo MonteQuad&Buggy tour Kolašin" width="200">
+  <img src="src/assets/montequad-logo-transparent.png" alt="Logo MonteQuad&Buggy tour Kolašin" width="200">
 </p>
 
 **MonteQuad&Buggy tour Kolašin** is a high-performance portfolio concept that merges the raw, unapologetic aesthetic of **Neo-Brutalism** with a fluid **Liquid UX** approach. This project is a deep dive into high-contrast design, bold typography, and surgical-grade code optimization.
