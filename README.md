@@ -5,6 +5,10 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
+<p align="center">
+  <img src="src/assets/montequad-logo.jpg" alt="Logo MonteQuad&Buggy tour Kolašin" width="200">
+</p>
+
 **MonteQuad&Buggy tour Kolašin** is a high-performance portfolio concept that merges the raw, unapologetic aesthetic of **Neo-Brutalism** with a fluid **Liquid UX** approach. This project is a deep dive into high-contrast design, bold typography, and surgical-grade code optimization.
 
 [**🌐 Live Demo**](https://brutal-ui-liquid-ux.vercel.app/) • [**📂 Repository**](https://github.com/anunnaki7/brutal-ui-liquid-ux)
