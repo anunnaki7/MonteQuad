@@ -181,6 +181,31 @@
   }
 }
 
+  /* CTA Shimmer Animation */
+  .cta-shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .cta-shimmer::after {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      hsl(0 0% 100% / 0.15) 45%,
+      hsl(0 0% 100% / 0.25) 50%,
+      hsl(0 0% 100% / 0.15) 55%,
+      transparent 60%
+    );
+    background-size: 200% 100%;
+    animation: ctaShimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes ctaShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
 @layer utilities {
   /* Noise Overlay */
   .noise-overlay {
