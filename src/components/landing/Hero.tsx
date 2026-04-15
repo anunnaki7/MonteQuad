@@ -60,7 +60,6 @@ const Hero = () => {
     if (!sectionRef.current || !bgRef.current || !contentRef.current) return;
 
     const ctx = gsap.context(() => {
-      // Parallax background: scale down and move slower on scroll
       gsap.fromTo(
         bgRef.current,
         { scale: 1.15 },
@@ -76,7 +75,6 @@ const Hero = () => {
         }
       );
 
-      // Content fades/moves up on scroll for parallax depth
       gsap.to(contentRef.current, {
         y: -80,
         opacity: 0,
@@ -89,7 +87,6 @@ const Hero = () => {
         },
       });
 
-      // Animate badge, subtitle, buttons with stagger
       const els = contentRef.current?.querySelectorAll(".hero-anim");
       if (els) {
         gsap.fromTo(
@@ -105,7 +102,7 @@ const Hero = () => {
 
   return (
     <section ref={sectionRef} className="min-h-screen min-h-[100dvh] flex items-center justify-center relative px-4 py-20 overflow-hidden">
-      {/* Hero Background Image with parallax */}
+      {/* Parallax BG */}
       <div
         ref={bgRef}
         className="absolute inset-0 bg-cover bg-[65%_30%] md:bg-center bg-no-repeat will-change-transform"
@@ -122,7 +119,7 @@ const Hero = () => {
           <span>{t("hero.location")}</span>
         </div>
 
-        {/* Title with split text */}
+        {/* Title */}
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
           <span className="block overflow-hidden">
             <SplitText text="Monte" />
@@ -143,7 +140,7 @@ const Hero = () => {
           <Button
             asChild
             size="lg"
-            className="btn-glow cta-shimmer bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-[0_0_50px_hsl(168_100%_48%_/_0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] rounded-full px-8 py-6 text-base font-semibold"
+            className="btn-glow cta-shimmer bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-[0_0_50px_hsl(40_85%_55%_/_0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] rounded-full px-8 py-6 text-base font-semibold"
           >
             <a href="#booking">
               <CalendarCheck className="w-5 h-5 mr-2" />
