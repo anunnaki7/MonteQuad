@@ -13,6 +13,8 @@ import LanguageNav from "@/components/landing/LanguageNav";
 import BackgroundEffects from "@/components/landing/BackgroundEffects";
 import Preloader from "@/components/landing/Preloader";
 import SmoothScroll from "@/components/SmoothScroll";
+import ScrollProgress from "@/components/landing/ScrollProgress";
+import BackToTop from "@/components/landing/BackToTop";
 
 const Index = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
@@ -22,6 +24,7 @@ const Index = () => {
       {!preloaderDone && <Preloader onComplete={() => setPreloaderDone(true)} />}
       <SmoothScroll>
         <div className="min-h-screen relative overflow-x-hidden">
+          <ScrollProgress />
           <BackgroundEffects />
           <LanguageNav />
           <Hero />
@@ -34,6 +37,7 @@ const Index = () => {
           <Contact />
           <Footer />
           <WhatsAppFloat />
+          <BackToTop />
         </div>
       </SmoothScroll>
     </>

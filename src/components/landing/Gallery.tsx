@@ -20,7 +20,6 @@ const Gallery = () => {
   useEffect(() => {
     if (!sectionRef.current) return;
     const ctx = gsap.context(() => {
-      // Header
       const header = sectionRef.current!.querySelector(".gallery-header");
       if (header) {
         gsap.fromTo(header, { y: 50, opacity: 0 }, {
@@ -28,7 +27,6 @@ const Gallery = () => {
           scrollTrigger: { trigger: sectionRef.current, start: "top 85%", toggleActions: "play none none none" },
         });
       }
-      // Gallery items cascade
       const items = sectionRef.current!.querySelectorAll(".gallery-item");
       gsap.fromTo(items, { y: 100, opacity: 0, scale: 0.88 }, {
         y: 0, opacity: 1, scale: 1,
@@ -39,12 +37,11 @@ const Gallery = () => {
     return () => ctx.revert();
   }, []);
 
-  // Magnetic hover effect on gallery items
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = e.currentTarget;
     const rect = el.getBoundingClientRect();
-    const x = (e.clientX - rect.left - rect.width / 2) * 0.08;
-    const y = (e.clientY - rect.top - rect.height / 2) * 0.08;
+    const x = (e.clientX - rect.left - rect.width / 2) * 0.06;
+    const y = (e.clientY - rect.top - rect.height / 2) * 0.06;
     gsap.to(el, { x, y, duration: 0.4, ease: "power2.out" });
   };
 
@@ -65,24 +62,30 @@ const Gallery = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        {/* Asymmetric Bento Gallery */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           {images.map((image, index) => (
             <div
               key={index}
-              className="gallery-item glass-card aspect-square relative overflow-hidden cursor-pointer group"
+              className={`gallery-item glass-card relative overflow-hidden cursor-pointer group ${
+                index === 0 ? "col-span-2 row-span-2 aspect-square" :
+                index === 1 ? "aspect-[4/3]" :
+                index === 2 ? "aspect-[4/3]" :
+                "col-span-2 lg:col-span-2 aspect-[21/9]"
+              }`}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
             >
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url(${image})` }}
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <Expand className="w-8 h-8 text-white transform scale-75 group-hover:scale-100 transition-transform duration-500" />
               </div>
-              {/* Magnetic glow border on hover */}
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                style={{ boxShadow: "inset 0 0 30px hsl(168 100% 48% / 0.15), 0 0 20px hsl(168 100% 48% / 0.1)" }}
+              <div
+                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                style={{ boxShadow: "inset 0 0 30px hsl(var(--primary) / 0.1), 0 0 20px hsl(var(--primary) / 0.06)" }}
               />
             </div>
           ))}

@@ -12,7 +12,6 @@ const MapSection = () => {
   useEffect(() => {
     if (!sectionRef.current) return;
     const ctx = gsap.context(() => {
-      // Header
       const header = sectionRef.current!.querySelector(".map-header");
       if (header) {
         gsap.fromTo(header, { y: 50, opacity: 0 }, {
@@ -20,14 +19,14 @@ const MapSection = () => {
           scrollTrigger: { trigger: sectionRef.current, start: "top 85%", toggleActions: "play none none none" },
         });
       }
-      // Map shutter reveal
+      // Shutter reveal
       const mapEl = sectionRef.current!.querySelector(".map-shutter");
       if (mapEl) {
         gsap.fromTo(mapEl,
           { clipPath: "inset(0 50% 0 50%)", opacity: 0 },
           {
             clipPath: "inset(0 0% 0 0%)", opacity: 1,
-            duration: 1.2, ease: "power4.out",
+            duration: 1.4, ease: "power4.out",
             scrollTrigger: { trigger: mapEl, start: "top 80%", toggleActions: "play none none none" },
           }
         );
