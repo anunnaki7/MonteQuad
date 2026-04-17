@@ -342,7 +342,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background: radial-gradient(ellipse at center, hsl(0 0% 9%) 0%, hsl(0 0% 4%) 100%);
+  background: radial-gradient(ellipse at center, hsl(220 25% 8%) 0%, hsl(220 30% 3%) 100%);
 }
 
 .preloader-logo-wrap {
