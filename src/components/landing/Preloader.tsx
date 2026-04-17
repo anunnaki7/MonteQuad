@@ -66,7 +66,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
         width: "360px",
         height: "360px",
         borderRadius: "50%",
-        background: "radial-gradient(ellipse at center, hsl(40 85% 55% / 0.08) 0%, transparent 65%)",
+        background: "radial-gradient(ellipse at center, hsl(190 100% 60% / 0.12) 0%, transparent 65%)",
         filter: "blur(60px)",
         opacity: isVisible ? 1 : 0,
         transition: "opacity 1.2s ease",
@@ -94,7 +94,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             objectFit: "contain",
             display: "block",
             mixBlendMode: "screen",
-            filter: "drop-shadow(0 0 30px hsl(40 85% 55% / 0.15)) drop-shadow(0 4px 20px hsl(0 0% 0% / 0.6))",
+            filter: "drop-shadow(0 0 30px hsl(190 100% 60% / 0.25)) drop-shadow(0 4px 20px hsl(0 0% 0% / 0.6))",
           }}
         />
       </div>
@@ -127,8 +127,8 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
         <div style={{
           height: "100%",
           width: `${counter}%`,
-          background: "linear-gradient(90deg, hsl(40 85% 55% / 0.6), hsl(40 85% 55%))",
-          boxShadow: "0 0 12px hsl(40 85% 55% / 0.4)",
+          background: "linear-gradient(90deg, hsl(190 100% 60% / 0.6), hsl(220 90% 65%), hsl(250 80% 65%))",
+          boxShadow: "0 0 12px hsl(190 100% 60% / 0.5)",
           transition: "width 0.1s ease",
         }} />
       </div>

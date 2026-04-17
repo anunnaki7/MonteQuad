@@ -14,75 +14,75 @@
 
 @layer base {
   :root {
-    /* Deep Charcoal → Black */
-    --background: 0 0% 7%;
-    --foreground: 0 0% 96%;
+    /* Deep space black */
+    --background: 220 25% 5%;
+    --foreground: 210 40% 98%;
 
     /* Card */
-    --card: 0 0% 100% / 0.03;
-    --card-foreground: 0 0% 96%;
+    --card: 220 25% 100% / 0.03;
+    --card-foreground: 210 40% 98%;
 
     /* Popover */
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 220 25% 7%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Primary - Warm Gold/Amber */
-    --primary: 40 85% 55%;
-    --primary-foreground: 0 0% 5%;
+    /* Primary - Electric Cyan (futuristic) */
+    --primary: 190 100% 60%;
+    --primary-foreground: 220 30% 6%;
 
-    /* Secondary - Warm Amber */
-    --secondary: 30 80% 50%;
-    --secondary-foreground: 0 0% 96%;
+    /* Secondary - Deep Violet/Indigo */
+    --secondary: 250 80% 65%;
+    --secondary-foreground: 210 40% 98%;
 
     /* Muted */
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 96% / 0.45;
+    --muted: 220 20% 12%;
+    --muted-foreground: 210 20% 70% / 0.7;
 
-    /* Accent */
-    --accent: 40 85% 55%;
-    --accent-foreground: 0 0% 5%;
+    /* Accent - matches primary */
+    --accent: 190 100% 60%;
+    --accent-foreground: 220 30% 6%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 0 0% 100% / 0.08;
-    --input: 0 0% 100% / 0.08;
-    --ring: 40 85% 55%;
+    --border: 200 100% 80% / 0.08;
+    --input: 200 100% 80% / 0.08;
+    --ring: 190 100% 60%;
 
     /* Radius */
     --radius: 1rem;
 
     /* Glass Tokens */
-    --glass-bg: 0 0% 100% / 0.03;
-    --glass-bg-hover: 0 0% 100% / 0.06;
-    --glass-border: 0 0% 100% / 0.08;
-    --glass-border-hover: 0 0% 100% / 0.15;
-    --glass-blur: 20px;
+    --glass-bg: 200 100% 80% / 0.025;
+    --glass-bg-hover: 200 100% 80% / 0.05;
+    --glass-border: 200 100% 80% / 0.1;
+    --glass-border-hover: 190 100% 60% / 0.3;
+    --glass-blur: 24px;
 
-    /* Glow Effects */
-    --glow-primary: 0 0 60px hsl(40 85% 55% / 0.25);
-    --glow-secondary: 0 0 60px hsl(30 80% 50% / 0.2);
+    /* Glow Effects - cool cyan/violet */
+    --glow-primary: 0 0 60px hsl(190 100% 60% / 0.35);
+    --glow-secondary: 0 0 60px hsl(250 80% 65% / 0.3);
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(40 85% 55%), hsl(30 80% 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(190 100% 60%), hsl(220 90% 65%), hsl(250 80% 65%));
     --gradient-instagram: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    --gradient-bg: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(40 85% 55% / 0.08), transparent),
-                   radial-gradient(ellipse 60% 40% at 80% 80%, hsl(30 80% 50% / 0.05), transparent);
+    --gradient-bg: radial-gradient(ellipse 80% 50% at 50% -20%, hsl(190 100% 60% / 0.1), transparent),
+                   radial-gradient(ellipse 60% 40% at 80% 80%, hsl(250 80% 65% / 0.07), transparent);
 
     /* WhatsApp */
     --whatsapp: 142 70% 49%;
 
     /* Sidebar */
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 100% / 0.7;
-    --sidebar-primary: 40 85% 55%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 0 0% 100% / 0.08;
-    --sidebar-ring: 40 85% 55%;
+    --sidebar-background: 220 25% 4%;
+    --sidebar-foreground: 210 40% 98% / 0.7;
+    --sidebar-primary: 190 100% 60%;
+    --sidebar-primary-foreground: 220 30% 6%;
+    --sidebar-accent: 220 20% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 200 100% 80% / 0.08;
+    --sidebar-ring: 190 100% 60%;
   }
 }
 
@@ -155,7 +155,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 30px hsl(40 85% 55% / 0.4));
+    filter: drop-shadow(0 0 30px hsl(190 100% 60% / 0.4));
   }
 
   /* Pulse Ring */
@@ -342,7 +342,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background: radial-gradient(ellipse at center, hsl(0 0% 9%) 0%, hsl(0 0% 4%) 100%);
+  background: radial-gradient(ellipse at center, hsl(220 25% 8%) 0%, hsl(220 30% 3%) 100%);
 }
 
 .preloader-logo-wrap {
@@ -351,7 +351,7 @@
   height: min(300px, 70vw);
   overflow: visible;
   animation: preloaderEntry 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  filter: drop-shadow(0 0 60px hsl(40 85% 55% / 0.15)) drop-shadow(0 0 20px hsl(0 0% 0% / 0.8));
+  filter: drop-shadow(0 0 60px hsl(190 100% 60% / 0.2)) drop-shadow(0 0 20px hsl(0 0% 0% / 0.8));
 }
 
 .preloader-logo {
