@@ -94,7 +94,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
             objectFit: "contain",
             display: "block",
             mixBlendMode: "screen",
-            filter: "drop-shadow(0 0 30px hsl(40 85% 55% / 0.15)) drop-shadow(0 4px 20px hsl(0 0% 0% / 0.6))",
+            filter: "drop-shadow(0 0 30px hsl(190 100% 60% / 0.25)) drop-shadow(0 4px 20px hsl(0 0% 0% / 0.6))",
           }}
         />
       </div>
