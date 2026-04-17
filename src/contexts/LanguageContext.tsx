@@ -87,6 +87,12 @@ const translations: Translations = {
   // Footer
   "footer.tagline": { me: "Avantura počinje ovdje", en: "Adventure starts here" },
   "footer.rights": { me: "Sva prava zadržana", en: "All rights reserved" },
+  "footer.menu": { me: "Meni", en: "Menu" },
+  "footer.connect": { me: "Povežite se", en: "Connect" },
+  "footer.units": { me: "Paketi", en: "Units" },
+  "footer.gallery": { me: "Galerija", en: "Gallery" },
+  "footer.location": { me: "Lokacija", en: "Location" },
+  "footer.contact": { me: "Kontakt", en: "Contact" },
 
   // Map
   "map.badge": { me: "Lokacija", en: "Location" },
