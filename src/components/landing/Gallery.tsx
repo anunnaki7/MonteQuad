@@ -62,26 +62,23 @@ const Gallery = () => {
           </h2>
         </div>
 
-        {/* Asymmetric Bento Gallery */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+        {/* Clean uniform gallery — every image fully visible */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6">
           {images.map((image, index) => (
             <div
               key={index}
-              className={`gallery-item glass-card relative overflow-hidden cursor-pointer group ${
-                index === 0 ? "col-span-2 row-span-2 aspect-square" :
-                index === 1 ? "aspect-[4/3]" :
-                index === 2 ? "aspect-[4/3]" :
-                "col-span-2 lg:col-span-2 aspect-[21/9]"
-              }`}
+              className="gallery-item glass-card relative overflow-hidden cursor-pointer group aspect-[4/3]"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
             >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${image})` }}
+              <img
+                src={image}
+                alt={`MonteQuad gallery ${index + 1}`}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Expand className="w-8 h-8 text-white transform scale-75 group-hover:scale-100 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <Expand className="w-6 h-6 text-white transform scale-75 group-hover:scale-100 transition-transform duration-500" />
               </div>
               <div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
