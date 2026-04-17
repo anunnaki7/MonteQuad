@@ -25,20 +25,20 @@ const Footer = () => {
           {/* Quick links */}
           <div className="md:justify-self-center">
             <h4 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
-              Menu
+              {t("footer.menu")}
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">Units</a></li>
-              <li><a href="#galerija" className="text-foreground/80 hover:text-primary transition-colors">Gallery</a></li>
-              <li><a href="#lokacija" className="text-foreground/80 hover:text-primary transition-colors">Location</a></li>
-              <li><a href="#kontakt" className="text-foreground/80 hover:text-primary transition-colors">Contact</a></li>
+              <li><a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">{t("footer.units")}</a></li>
+              <li><a href="#galerija" className="text-foreground/80 hover:text-primary transition-colors">{t("footer.gallery")}</a></li>
+              <li><a href="#lokacija" className="text-foreground/80 hover:text-primary transition-colors">{t("footer.location")}</a></li>
+              <li><a href="#kontakt" className="text-foreground/80 hover:text-primary transition-colors">{t("footer.contact")}</a></li>
             </ul>
           </div>
 
           {/* Socials */}
           <div className="md:justify-self-end">
             <h4 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
-              Connect
+              {t("footer.connect")}
             </h4>
             <div className="flex items-center gap-3">
               <a
