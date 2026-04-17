@@ -143,7 +143,7 @@ const Hero = () => {
           <Button
             asChild
             size="lg"
-            className="btn-glow cta-shimmer bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-[0_0_50px_hsl(40_85%_55%_/_0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] rounded-full px-8 py-6 text-base font-semibold"
+            className="btn-glow cta-shimmer bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow hover:shadow-[0_0_50px_hsl(190_100%_60%_/_0.5)] transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] rounded-full px-8 py-6 text-base font-semibold"
           >
             <a href="#booking">
               <CalendarCheck className="w-5 h-5 mr-2" />
