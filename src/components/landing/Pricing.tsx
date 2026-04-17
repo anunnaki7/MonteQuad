@@ -127,12 +127,12 @@ const Pricing = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 md:gap-7 max-w-6xl mx-auto">
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className={`bento-card glass-card overflow-hidden group transition-all duration-500 hover:-translate-y-1 ${
-                pkg.popular ? "md:col-span-3 md:row-span-2 ring-1 ring-primary/30" : "md:col-span-3"
+              className={`bento-card glass-card relative overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_70px_-20px_hsl(var(--primary)/0.35)] ${
+                pkg.popular ? "md:col-span-3 md:row-span-2 ring-1 ring-primary/40" : "md:col-span-3"
               }`}
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}

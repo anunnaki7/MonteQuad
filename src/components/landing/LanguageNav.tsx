@@ -31,8 +31,8 @@ const LanguageNav = () => {
     <nav
       className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-2 py-2 rounded-full transition-all duration-500 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-2xl border border-border shadow-lg"
-          : "bg-background/40 backdrop-blur-xl border border-transparent"
+          ? "bg-background/70 backdrop-blur-2xl border border-border shadow-[0_8px_32px_rgba(0,0,0,0.5)] ring-1 ring-primary/10"
+          : "bg-transparent backdrop-blur-md border border-transparent"
       } ${hidden ? "-translate-y-20 opacity-0" : "translate-y-0 opacity-100"}`}
     >
       {/* Logo */}
