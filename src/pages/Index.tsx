@@ -37,7 +37,7 @@ const Index = () => {
           <Contact />
           <Footer />
           <WhatsAppFloat />
-          <BackToTop />
+          
         </div>
       </SmoothScroll>
     </>
