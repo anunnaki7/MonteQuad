@@ -66,7 +66,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
         width: "360px",
         height: "360px",
         borderRadius: "50%",
-        background: "radial-gradient(ellipse at center, hsl(40 85% 55% / 0.08) 0%, transparent 65%)",
+        background: "radial-gradient(ellipse at center, hsl(190 100% 60% / 0.12) 0%, transparent 65%)",
         filter: "blur(60px)",
         opacity: isVisible ? 1 : 0,
         transition: "opacity 1.2s ease",
