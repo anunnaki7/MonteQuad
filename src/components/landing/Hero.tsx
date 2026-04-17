@@ -122,8 +122,8 @@ const Hero = () => {
           <span>{t("hero.location")}</span>
         </div>
 
-        {/* Title - "MonteQuad" on one line */}
-        <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
+        {/* Title - "MonteQuad" always one line */}
+        <h1 className="font-display text-[2.75rem] xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6 whitespace-nowrap">
           <span className="inline-block overflow-hidden align-baseline">
             <SplitText text="Monte" />
           </span>
