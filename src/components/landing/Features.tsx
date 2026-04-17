@@ -38,9 +38,9 @@ const Features = () => {
   return (
     <section ref={sectionRef} className="py-20 md:py-32 px-4">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card glass-card p-8 text-center relative overflow-hidden group">
+            <div key={index} className="feature-card glass-card p-8 md:p-10 text-center relative overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_hsl(var(--primary)/0.25)]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="feature-icon w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-primary/10 rounded-2xl text-primary transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-glow">
                 <feature.icon className="w-7 h-7" />

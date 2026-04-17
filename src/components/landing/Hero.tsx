@@ -108,8 +108,11 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-[65%_30%] md:bg-center bg-no-repeat will-change-transform"
         style={{ backgroundImage: `url(${heroImage})`, transformOrigin: "center center" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
+        {/* Cinematic dark overlay (50%) + bottom fade + vignette */}
+        <div className="absolute inset-0 bg-background/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-background/30" />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 40%, hsl(var(--background) / 0.6) 100%)" }} />
       </div>
 
       <div ref={contentRef} className="text-center z-10 max-w-4xl mx-auto">
