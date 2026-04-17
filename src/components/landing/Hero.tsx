@@ -122,12 +122,12 @@ const Hero = () => {
           <span>{t("hero.location")}</span>
         </div>
 
-        {/* Title */}
+        {/* Title - "MonteQuad" on one line */}
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
-          <span className="block overflow-hidden">
+          <span className="inline-block overflow-hidden align-baseline">
             <SplitText text="Monte" />
           </span>
-          <span className="block text-gradient overflow-hidden">
+          <span className="inline-block text-gradient overflow-hidden align-baseline">
             <SplitText text="Quad" />
           </span>
         </h1>
