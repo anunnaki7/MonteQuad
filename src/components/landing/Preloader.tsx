@@ -127,8 +127,8 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
         <div style={{
           height: "100%",
           width: `${counter}%`,
-          background: "linear-gradient(90deg, hsl(40 85% 55% / 0.6), hsl(40 85% 55%))",
-          boxShadow: "0 0 12px hsl(40 85% 55% / 0.4)",
+          background: "linear-gradient(90deg, hsl(190 100% 60% / 0.6), hsl(220 90% 65%), hsl(250 80% 65%))",
+          boxShadow: "0 0 12px hsl(190 100% 60% / 0.5)",
           transition: "width 0.1s ease",
         }} />
       </div>
