@@ -14,7 +14,7 @@ import BackgroundEffects from "@/components/landing/BackgroundEffects";
 import Preloader from "@/components/landing/Preloader";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/landing/ScrollProgress";
-import BackToTop from "@/components/landing/BackToTop";
+
 
 const Index = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
